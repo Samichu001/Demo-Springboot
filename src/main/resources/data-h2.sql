@@ -1,0 +1,1 @@
+insert into students(nombre,apellido) values ('h2','h2');

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thyneleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	
+	<form th:action="@{/searchStudent}">
+		<span>Buscar:</span>
+		<input type="text" th:name="search"/>
+	</form>
+	
+	<table>
+		<th>ID</th>
+		<th>Nombre</th>
+		<th>Apellido</th>
+		<th>Acciones</th>
+		<tbody>
+			<tr th:each="stud: ${estudiantes}">
+				<td th:text="${stud.id}"/>
+				<td th:text="${stud.nombre}"/>
+				<td th:text="${stud.apellido}"/>
+				<td><a th:href="@{'/deleteStudent/'+${stud.id}}">Hacer click</a></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

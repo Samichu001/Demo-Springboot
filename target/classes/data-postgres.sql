@@ -1,0 +1,1 @@
+insert into students(nombre,apellido) values ('postgres','postgres');

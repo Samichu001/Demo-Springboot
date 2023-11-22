@@ -1,0 +1,11 @@
+com\example\demo\controller\HelloController.class
+com\example\demo\DemoApplication.class
+com\example\demo\service\StudentService.class
+com\example\demo\controller\database\DBConnection.class
+com\example\demo\model\Student.class
+com\example\demo\model\StudentRowMapper.class
+com\example\demo\controller\StudentController.class
+com\example\demo\controller\database\PostgresConnection.class
+com\example\demo\controller\database\MySQLConnection.class
+com\example\demo\repository\StudentRepository.class
+com\example\demo\controller\database\H2Connection.class
